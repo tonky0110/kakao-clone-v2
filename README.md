@@ -61,3 +61,13 @@ tag
     <link href="file path" rel="stylesheet">
     ...
 </head>
+
+box의 4가지 구성
+
+    margin
+
+        border
+
+            Padding
+
+                content
