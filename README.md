@@ -55,3 +55,9 @@ tag
         property-name: value;
         property-name: value;
     }
+
+<head>
+    ...
+    <link href="file path" rel="stylesheet">
+    ...
+</head>
