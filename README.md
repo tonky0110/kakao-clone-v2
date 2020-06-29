@@ -24,3 +24,13 @@ meta tag: 브라우저를 위한 추가 정보.
 
 information: head 파트에 작성.
 content: body파트에 작성.
+
+# 2.5 semantic vs. non-semantic
+
+semantic: 의미를 가지고 있는 태그.
+
+    ex) h1, section, header, footer, article, ...
+
+non-semantic: 의미를 가지고 있지 않는 태그.
+
+    ex) div, span, ...
