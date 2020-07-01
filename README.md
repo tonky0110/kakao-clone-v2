@@ -71,3 +71,8 @@ box의 4가지 구성
             Padding
 
                 content
+
+display
+block: 컬럼단위로 표시
+inline-block: 옆으로 붙음
+inline: block으로 설정하지 않음.(text처럼 처리)
