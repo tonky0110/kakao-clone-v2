@@ -7,19 +7,42 @@
     <title>Box Model</title>
 </head>
 <style>
-    .box {
+    body,
+    html {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        height: 400%;
         background-color: red;
-        width: 200px;
-        height: 200px;
-        border: 2px solid black;
-        display: inline-block;
+    }
+
+    #boxOne {
+        width: 300px;
+        height: 300px;
+        background-color: yellow;
+        position: static;
+    }
+
+    #boxTwo {
+        width: 300px;
+        height: 300px;
+        background-color: green;
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
     }
 </style>
 
 <body>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
+    <div id="boxOne">
+        <div class="box-child"></div>
+    </div>
+    <div id="boxTwo">
+        <div class="box-child"></div>
+    </div>
 </body>
 
 </html>
