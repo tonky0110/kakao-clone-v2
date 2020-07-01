@@ -5,21 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Box Model</title>
-</head>
-<style>
-    body,
-    html {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-    }
+    <style>
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
 
-    body {
-        height: 400%;
-        background-color: red;
-    }
+        body {
+            height: 400%;
+            background-color: red;
+        }
 
-    #boxOne {
+        /* Position Fiexed */
+        /* #boxOne {
         width: 300px;
         height: 300px;
         background-color: yellow;
@@ -33,15 +33,37 @@
         position: fixed;
         bottom: 10px;
         right: 10px;
-    }
-</style>
+    } */
+
+        .abs-box {
+            width: 400px;
+            height: 400px;
+            background-color: yellow;
+            position: relative;
+        }
+
+        .abs-child {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+        }
+    </style>
+</head>
 
 <body>
-    <div id="boxOne">
+    <!-- Position Fixed -->
+    <!-- <div id="boxOne">
         <div class="box-child"></div>
     </div>
     <div id="boxTwo">
         <div class="box-child"></div>
+    </div> -->
+
+    <div class="abs-box">
+        <div class="abs-child"></div>
     </div>
 </body>
 
