@@ -8,71 +8,51 @@
     <style>
         body {
             font-family: sans-serif;
-            padding: 0;
-            margin: 0;
-            padding-top: 100px;
-            /* Height of the header */
-            height: 1500px;
         }
 
-        nav {
-            background-color: #ff7879;
-            height: 100px;
+        body,
+        html {
             width: 100%;
-            position: fixed;
-            top: 0px;
-            z-index: 1;
-            /* 👈🏻 Magic, remove it, see what happens */
-        }
-
-        .box {
-            display: inline-block;
             height: 100%;
-            vertical-align: top;
-            /* 👈🏻 Magic, remove it, see what happens */
+            margin: 0;
+            padding: 0;
         }
 
-        .blueBox {
-            display: inline-block;
-            background-color: #7ed6df;
-            width: 70%;
-        }
-
-        .blueBox h1 {
-            color: white;
-            margin-top: 50px;
-            margin-left: 50px;
-        }
-
-        .yellowBox {
-            background-color: #ffcc02;
-            width: 28%;
-            border: 5px solid grey;
-            display: inline-block;
+        .wrapper {
+            background-color: blue;
             height: 100%;
-            position: relative;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
         }
 
-        .greenBox {
-            background-color: #bbdc58;
+        .center-box {
+            display: flex;
+            background-color: red;
+            width: 500px;
+            height: 500px;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .gray-box {
             width: 100px;
-            height: 50px;
-            position: absolute;
-            top: -30px;
-            left: -50px;
-            z-index: 2;
-            /* 👈🏻 Magic, remove it, see what happens */
+            height: 100px;
+            background-color: gray;
         }
     </style>
 </head>
 
 <body>
-    <nav></nav>
-    <div class="box blueBox">
-        <h1>This is the day one</h1>
-    </div>
-    <div class="box yellowBox">
-        <div class="greenBox"></div>
+    <div class="wrapper">
+        <div class="center-box">
+            <div class="gray-box"></div>
+            <div class="gray-box"></div>
+            <div class="gray-box"></div>
+        </div>
     </div>
 </body>
 
