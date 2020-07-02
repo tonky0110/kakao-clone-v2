@@ -8,86 +8,71 @@
     <style>
         body {
             font-family: sans-serif;
-        }
-
-        body,
-        html {
-            width: 100%;
-            height: 100%;
-            margin: 0;
             padding: 0;
-        }
-
-        body {
-            width: 100%;
+            margin: 0;
+            padding-top: 100px;
+            /* Height of the header */
             height: 1500px;
         }
 
-        .wrapper {
+        nav {
+            background-color: #ff7879;
+            height: 100px;
             width: 100%;
+            position: fixed;
+            top: 0px;
+            z-index: 1;
+            /* 👈🏻 Magic, remove it, see what happens */
+        }
+
+        .box {
+            display: inline-block;
             height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
+            vertical-align: top;
+            /* 👈🏻 Magic, remove it, see what happens */
+        }
+
+        .blueBox {
+            display: inline-block;
+            background-color: #7ed6df;
+            width: 70%;
+        }
+
+        .blueBox h1 {
+            color: white;
+            margin-top: 50px;
+            margin-left: 50px;
+        }
+
+        .yellowBox {
+            background-color: #ffcc02;
+            width: 28%;
+            border: 5px solid grey;
+            display: inline-block;
+            height: 100%;
             position: relative;
         }
 
-        .top {
-            position: fixed;
-            width: 100%;
-            height: 150px;
-            background-color: red;
-        }
-
-        .container {
-            display: flex;
-            margin-top: 150px;
-            height: 90%;
-            width: 100%;
-        }
-
-        .left {
-            background-color: blue;
-            height: 100%;
-            width: 80%;
-            display: flex;
-        }
-
-        .right {
-            background-color: yellow;
-            width: 20%;
-            height: 100%;
-            border: 2px solid gray;
-        }
-
-        span {
-            color: white;
-            font-size: 20px;
-            font-weight: 700;
-            margin: 50px;
-        }
-
-        .fixed-box {
-            background-color: green;
-            width: 10%;
-            height: 5%;
+        .greenBox {
+            background-color: #bbdc58;
+            width: 100px;
+            height: 50px;
             position: absolute;
-            top: 7.5%;
-            left: 75%;
+            top: -30px;
+            left: -50px;
+            z-index: 2;
+            /* 👈🏻 Magic, remove it, see what happens */
         }
     </style>
 </head>
 
 <body>
-    <div class="wrapper">
-        <div class="top"></div>
-        <div class="container">
-            <div class="left">
-                <span>This is the day one</span>
-            </div>
-            <div class="right"></div>
-        </div>
-        <div class="fixed-box"></div>
+    <nav></nav>
+    <div class="box blueBox">
+        <h1>This is the day one</h1>
+    </div>
+    <div class="box yellowBox">
+        <div class="greenBox"></div>
     </div>
 </body>
 
